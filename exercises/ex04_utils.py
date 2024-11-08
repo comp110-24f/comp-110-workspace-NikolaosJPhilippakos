@@ -45,6 +45,7 @@ def max(input_list: list[int]) -> int:
         return return_value
 
 
+# No need to check for equalities, just inequalities. Assume they are equal if no inequalities are found.
 def is_equal(input_list_1: list[int], input_list_2: list[int]) -> bool:
     """Checks the value for each index in two lists of integers,
     and returns true if every pair of values is equal."""
@@ -63,6 +64,7 @@ def is_equal(input_list_1: list[int], input_list_2: list[int]) -> bool:
     return True
 
 
+# I really like how while loops intrinsically account for empty lists becuause their lengths are zero.
 def extend(input_list_1: list[int], input_list_2: list[int]) -> None:
     """Appends list 2 on to list 1"""
     list_length: int = len(input_list_2)
